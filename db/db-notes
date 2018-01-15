@@ -29,13 +29,11 @@ systemctl status mariadb
 
 3.
 
->CRATE TABLE table-name	
-{
-column-name 1111,
-column-name 2222,
-column-name 3333,
-...
-};
+>CReATE TABLE table-name	
+(
+Column1-Name(without "") type,
+Column2-Name(without "") type,
+);
 
 
 >DROP TABLE table-name;		# to delete tables
