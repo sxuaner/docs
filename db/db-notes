@@ -19,15 +19,17 @@ systemctl status mariadb
 
 
 ---------------------------- COMMANDS ------------------------------
-1. User priviledges
 
+############### User priviledges  ############### 
 >CREATE USER 'sx'@'localhost' IDENTIFIED BY 'songxuan';
+
+?? priviledges??
 
 2. Insert into columns;
 
 >INSERT INTO table-name VALUES ( value1, value2, ...);
 
-3.
+############### to create table ############### 
 
 >CReATE TABLE table-name	
 (
@@ -39,7 +41,8 @@ Column2-Name(without "") type,
 >DROP TABLE table-name;		# to delete tables
 
 
-4. to retrieve data from db
+
+############### to retrieve data from db ###############
 
 >SELECT column-name, column-name, ...
  FROM table-name
@@ -49,11 +52,25 @@ Column2-Name(without "") type,
 ( conditions can be : column-name = 11 )
 
 
-5. to change a certain field of a table.
+
+############### 5. to change a certain field in a certain row of a table. ######
 
 UPDATE table-name
 SET column-name = vlue,
 WHERE conditions;
 
-6.
+
+############### 7. FLUSH PRIVILEDGES should be used after command #############
+
+   INSERT INTO user
+   (host, user, password, select_priv, insert_priv)
+   VALUES
+   ('localhost', sx, xxxx, 'Y', 'Y', 'Y')
+
+############### 8. ALTER modifies database schema. #############
+
+# to drop/add a column of/to a exsiting table.
+   ALTER TABLE sx
+   DROP/ADD column-name datatype;
+
 
