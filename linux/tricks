@@ -1,4 +1,4 @@
 # list the files installed from a package
 
-rpm -ql pachage-name
+rpm -ql package-name
 
