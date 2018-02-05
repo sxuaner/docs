@@ -1,0 +1,5 @@
+^[aed]  matches all files starting with a, e, d.
+
+---------------------------------
+
+* The asterisk indicates zero or more occurrences of the preceding element. For example, ab*c matches "ac", "abc", "abbc", "abbbc", and so on.
