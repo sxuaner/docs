@@ -2,3 +2,7 @@
 
 rpm -ql package-name
 
+
+# netstat
+
+$ sudo lsof -i -P -n | grep LISTEN
