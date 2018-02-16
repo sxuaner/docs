@@ -42,3 +42,5 @@ Example of such configuration is Apache Tomcat HTTP Server and Oracle (formerly 
 
 In some cases the servers are tightly integrated such as IIS and .NET Runtime. IIS is web server. When equipped with .NET runtime environment, IIS is capable of providing application services.
 ```
+
+### If you use package.* then all the classes and interfaces of this package will be accessible but not subpackages. 
