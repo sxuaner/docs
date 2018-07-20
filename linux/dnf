@@ -1,3 +1,46 @@
+# Non-interactively checks if updates of the specified packages are available
 dnf check-update
 
-Non-interactively checks if updates of the specified packages are available
+# update a new package
+dnf update [package name] -y
+
+# download a package rpm file
+dnf download [package name]
+
+# local installation
+dnf install [path to rpm file].rpm
+
+# reinstall
+dnf reinstall [package name]
+
+# check repository list
+dnf repolist [all]
+
+* option all means to list disabled file too
+
+# find out which package provides a certain file
+dnf provide [file name]
+
+# view package information
+dnf info [package name]
+
+# view transaction history
+dnf history
+
+# to cache package information
+dnf makecache
+
+# clean cached
+dnf clean all
+
+# use -q to hide all output
+
+# to exclude certain package
+dnf -update -x [package name]
+
+# to install package groups 
+dnf grouplist
+
+# list installed
+dnf list installed
+
